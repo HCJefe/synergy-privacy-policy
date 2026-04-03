@@ -1,0 +1,43 @@
+reviews:
+  auto_review: true
+  auto_tools: true
+  skip_draft: true
+
+language: en
+
+review_status:
+  auto_reply: true
+  high_level_summary: true
+
+summary:
+  title: "CodeRabbit Review Summary"
+  description: true
+  in_pr_description: true
+
+tone: professional
+
+review_options:
+  early_termination: false
+
+ignore_patterns:
+  - "node_modules/**"
+  - "dist/**"
+  - "build/**"
+  - ".terraform/**"
+  - "*.lock.hcl"
+  - "package-lock.json"
+  - "yarn.lock"
+  - ".next/**"
+  - "coverage/**"
+
+focus_areas:
+  - Security vulnerabilities
+  - Performance issues
+  - Error handling
+  - TypeScript best practices
+  - Memory leaks
+  - Unhandled promises
+
+security:
+  check_secrets: true
+  check_vulnerabilities: true
